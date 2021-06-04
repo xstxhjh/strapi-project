@@ -14,6 +14,10 @@
     "testField": {
       "type": "string",
       "required": false
+    },
+    "testNameField": {
+      "type": "string",
+      "required": false
     }
   }
 }
