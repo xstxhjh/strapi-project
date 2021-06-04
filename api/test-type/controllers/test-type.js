@@ -20,6 +20,8 @@ module.exports = {
 
     data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
 
+    strapi.middleware.hjh.fn()
+
     return data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
   },
 };
