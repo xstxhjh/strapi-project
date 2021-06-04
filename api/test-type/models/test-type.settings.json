@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_types",
+  "info": {
+    "name": "testType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testField": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
