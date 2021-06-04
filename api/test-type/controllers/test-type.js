@@ -17,6 +17,9 @@ module.exports = {
    */
   find: async ctx => {
     const data = await strapi.services['test-type'].find()
+
+    data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
+
     return data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
   },
 };
