@@ -17,7 +17,7 @@ module.exports = {
    * Simple example.
    * Every monday at 1am.
    */
-  "*/5 * * * * *": () => {
+  "*/60 * * * * *": () => {
     count++;
     console.log(`定时器${count}`);
   },

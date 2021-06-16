@@ -5,7 +5,7 @@
       "path": "/test-types",
       "handler": "test-type.find",
       "config": {
-        "policies": []
+        "policies": ["global::isAuthenticated"]
       }
     },
     {
