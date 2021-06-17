@@ -25,6 +25,8 @@ module.exports = {
     const count = await strapi.services['test-type'].count()
     console.log(`test-type models count ${count}`)
 
+    const jwt = await strapi.plugins['users-permissions'].services.jwt
+
     return data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
   },
 };
