@@ -22,6 +22,9 @@ module.exports = {
 
     strapi.middleware.hjh.fn()
 
+    const count = await strapi.services['test-type'].count()
+    console.log(`test-type models count ${count}`)
+
     return data.map(entity => sanitizeEntity(entity, { model: strapi.models['test-type'] }))
   },
 };

@@ -1,5 +1,5 @@
 module.exports = async (ctx, next) => {
-  console.log(ctx)
+  return await next();
   if (ctx.state.user) {
     // Go to next policy or will reach the controller's action.
     return await next();

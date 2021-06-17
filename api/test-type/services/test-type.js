@@ -5,4 +5,8 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  count(params) {
+    return strapi.query('test-type').count(params);
+  },
+};
