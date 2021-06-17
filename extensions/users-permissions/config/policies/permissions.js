@@ -1,4 +1,6 @@
 
+// https://github.com/strapi/strapi/blob/master/packages/strapi-plugin-users-permissions/config/policies/permissions.js
+
 module.exports = async (ctx, next) => {
   if (
     !(ctx.request && ctx.request.header && ctx.request.header.authorization) ||
